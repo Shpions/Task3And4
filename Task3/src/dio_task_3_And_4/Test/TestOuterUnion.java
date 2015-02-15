@@ -6,6 +6,7 @@ import java.util.Arrays;
 
 import static org.junit.Assert.*;
 
+//local code review (vtegza): same as for TestMerge @ 2/15/2015
 public class TestOuterUnion {
     final Pojo[] p1 = {new Pojo("Slava", 44), new Pojo("Olga", 32), new Pojo("Genk", 17)
             , new Pojo("Kosta", 22), new Pojo("Igor", 14), new Pojo("Andrey", 18)};

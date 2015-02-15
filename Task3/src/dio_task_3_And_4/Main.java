@@ -10,7 +10,7 @@ public class Main {
         rightArray = checkAndSort(rightArray);
 
         Pojo[] res = Arrays.copyOf(leftArray, leftArray.length + rightArray.length);
-
+        //local code review (vtegza): replace with for each  @ 2/15/2015
         for (int i = 0; i < rightArray.length; i++) {
             if (Arrays.binarySearch(leftArray, rightArray[i]) < 0) {
                 res[leftArray.length + count] = rightArray[i];
@@ -28,7 +28,7 @@ public class Main {
 
         Pojo [] res = new Pojo[leftArray.length + rightArray.length];
         Arrays.fill(res,new Pojo("ZZZZZ",1));
-
+        //local code review (vtegza): replace with for each @ 2/15/2015
         for (int i = 0; i < rightArray.length; i++) {
             if (Arrays.binarySearch(leftArray, rightArray[i]) >= 0) {
                 res[leftArray.length + count] = rightArray[i];
@@ -49,6 +49,7 @@ public class Main {
         Pojo [] res = new Pojo[leftArray.length + rightArray.length];
         Arrays.fill(res,new Pojo("ZZZZZ",1));
 
+        //local code review (vtegza): replace with foreach @ 2/15/2015
         for (int i = 0; i < rightArray.length; i++) {
             if (Arrays.binarySearch(leftArray, rightArray[i]) < 0) {
                 res[count] = rightArray[i];
@@ -67,6 +68,7 @@ public class Main {
         return resultArray;
     }
 
+    //local code review (vtegza): use readable names for variables/parameters @ 2/15/2015
     public Pojo [] checkAndSort(Pojo p[]){
         if(p.length == 0){
             Arrays.sort(p);

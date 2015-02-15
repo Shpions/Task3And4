@@ -1,6 +1,8 @@
 package dio_task_3_And_4;
 
 public class Pojo implements Comparable <Pojo>{
+
+    //local code review (vtegza): could be final @ 2/15/2015
     private String name;
     private int age;
 
